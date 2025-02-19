@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpeechAnalizator">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient">
+        </androidx.appcompat.widget.Toolbar>
+
+        <Button
+            android:id="@+id/goToRecordingButton"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="30sp"
+            android:text="Nagraj wyraz"
+            android:background="@drawable/gradient" />
+
+        <Button
+            android:id="@+id/selectFileButton"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="30sp"
+            android:text="Wybierz plik"
+            android:background="@drawable/gradient" />
+
+        <TextView
+            android:id="@+id/selectedFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wybrany plik: "
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            />
+
+        <Button
+            android:id="@+id/analizeButton"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Przejdź do analizy"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="30sp"
+            android:background="@drawable/gradient" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Przewidywany wynik:"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/confidenceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pewność:"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+                    android:id="@+id/signalImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Sygnał" />
+
+                <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+                    android:id="@+id/spectrogramImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Spektrogram" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

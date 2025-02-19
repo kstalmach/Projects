@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SZ_Exercise">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient">
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:id="@+id/chooseOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Wybierz rodzaj jaki chcesz ćwiczyć"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="@drawable/gradient_darker"
+            />
+
+        <Button
+            android:id="@+id/buttonNaglosie"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:text="W nagłosie"
+            android:background="@drawable/gradient"
+            />
+
+        <Button
+            android:id="@+id/buttonSrodglosie"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:text="W śródgłosie"
+            android:background="@drawable/gradient"
+            />
+
+        <Button
+            android:id="@+id/buttonWyglosie"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:text="W wygłosie"
+            android:background="@drawable/gradient"
+            />
+
+    </LinearLayout>
+</ScrollView>

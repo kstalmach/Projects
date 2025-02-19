@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".R_Exercise">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient">
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/instructionHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instrukcja:"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/instructionStep1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Znajdź ciche pomieszczenie."
+            android:textSize="24sp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp"
+            />
+
+        <TextView
+            android:id="@+id/instructionStep2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Wybierz słowo, w którym chcesz sprawdzić swoją wymowę."
+            android:textSize="24sp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp"
+            />
+
+        <TextView
+            android:id="@+id/instructionStep3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Przejdź do opcji 'NAGRAJ WYRAZ', zacznij nagrywanie, przeczytaj wybrany wyraz, zakończ nagrywanie i zapisz plik. (Jeżeli masz już nagranie, pomiń ten krok.)"
+            android:textSize="24sp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp"
+            />
+
+        <TextView
+            android:id="@+id/instructionStep4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. WYBIERZ PLIK, który chcesz przeanalizować."
+            android:textSize="24sp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp"
+            />
+
+        <TextView
+            android:id="@+id/instructionStep5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Wybierz opcję 'PRZEJDŹ DO ANALIZY'."
+            android:textSize="24sp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp"
+            />
+        <TextView
+            android:id="@+id/instructionStep6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. Sprawdź wynik analizy"
+            android:textSize="24sp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp"
+            />
+        <TextView
+            android:id="@+id/instructionStep7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7. Jeżeli wynik jest zadowalający, czyli pewność poprawnej wymowy wynosi ok. 80-100% to świetnie, możesz przejść do kolejnego słowa. "
+            android:textSize="24sp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp"
+            />
+        <TextView
+            android:id="@+id/instructionStep8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jeżeli pewność wynosi 50-70% lub wynikiem jest niepoprawna wymowa to spróbuj się nagrać jeszcze raz (możliwe, że w nagraniu były inne dźwięki). Jeżeli wynik się powtórzy przejdź do ćwiczeń korekcyjnych."
+            android:textSize="24sp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp"
+            />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SZ_Naglosie">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient">
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"  android:layout_below="@+id/myToolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/exerciseTextViewHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"  android:textSize="38sp"
+            android:textColor="@android:color/black"
+            android:padding="16dp"
+            android:text="Słowa: "
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/exerciseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        android:padding="16dp"
+        android:text="Słowa: "
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/previousButton"
+            android:textSize="24sp"
+            android:layout_width="0dp"  android:layout_height="80dp"
+            android:text="Poprzednie"
+            android:layout_weight="0.95"  android:layout_marginEnd="2dp"
+            android:background="@drawable/gradient" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:textSize="24sp"
+            android:layout_width="0dp"  android:layout_height="80dp"
+            android:text="Następne"
+            android:layout_weight="0.95"  android:layout_marginStart="2dp"
+            android:background="@drawable/gradient" />
+    </LinearLayout>
+</RelativeLayout>

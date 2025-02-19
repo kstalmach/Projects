@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseWord">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient">
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:id="@+id/chooseOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Wybierz słowo, które chcesz analizować"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="@drawable/gradient_darker"
+            />
+
+
+        <Button
+            android:id="@+id/buttonSzafa"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:text="SZAFA"
+            android:background="@drawable/gradient"
+            />
+
+        <Button
+            android:id="@+id/buttonSzopa"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:text="Szopa"
+            android:background="@drawable/gradient"
+            />
+
+        <Button
+            android:id="@+id/buttonSzelki"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:text="Szelki"
+            android:background="@drawable/gradient"
+            />
+
+        <Button
+            android:id="@+id/buttonKasza"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:text="KASZA"
+            android:background="@drawable/gradient"
+            />
+
+        <Button
+            android:id="@+id/buttonNosze"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:text="NOSZE"
+            android:background="@drawable/gradient"
+            />
+        <Button
+            android:id="@+id/buttonWieszak"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:text="WIESZAK"
+            android:background="@drawable/gradient"
+            />
+        <Button
+            android:id="@+id/buttonKosz"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:text="KOSZ"
+            android:background="@drawable/gradient"
+            />
+        <Button
+            android:id="@+id/buttonAfisz"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:text="AFISZ"
+            android:background="@drawable/gradient"
+            />
+        <Button
+            android:id="@+id/buttonGulasz"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:text="GULASZ"
+            android:background="@drawable/gradient"
+            />
+        <Button
+            android:id="@+id/buttonInstrukcja"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:text="INSTRUKCJA"
+            android:background="@drawable/gradient_darker"
+            />
+    </LinearLayout>
+</ScrollView>
